@@ -17,7 +17,7 @@ const AlbergadoSchema = new Schema({
   fechaNacimiento: { type: Date, required: true },
   ciudadNacimiento: { type: String, required: true },
   telefono: { type: String, required: false },
-  numIdentidad: { type: String, required: true, maxlength: 13 },
+  numIdentidad: { type: String, required: true, minlength: 13 },
   estaAlbergado: { type: Boolean, required: true, default: true },
   padecimientos: { type: [String], required: false },
   etapa: {
